@@ -908,7 +908,17 @@ border-radius: 50%;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
+.milio-itn {
+	margin: 0 30px 20px 30px; 
+	padding: 10px; 
+	text-align: left;
+}
 
+@media (max-width: 767.5px) {
+	.milio-itn{
+		text-align: center;
+	}
+}
 /* -------- Slide Up -------- */
 @keyframes slideUpOnly {
   0%   { transform: translateY(34px); }
