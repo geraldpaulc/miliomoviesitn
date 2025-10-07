@@ -1,0 +1,183 @@
+/* -- Upcoming Movies Slider -- */
+
+.carousel {
+  margin: 0;
+}
+
+.carousel-inner {
+  display: flex;
+}
+
+.carousel-inner .item {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.movie {
+  flex: 0 0 auto;
+  margin-right: 10px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.movie:last-child {
+  margin-right: 0;
+}
+
+.movie img {
+  width: 180px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.4s ease;
+}
+
+.movie:hover img {
+  transform: scale(1.1) !important;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background: none;
+  color: #fff;
+  opacity: 1;
+  cursor: pointer;
+  font-size: 40px;
+  top: 40%;
+}
+
+.carousel-control.left:hover,
+.carousel-control.right:hover {
+  color: rgba(255, 255, 255, 0.5);
+  background: none;
+}
+
+.carousel-control.hidden {
+  display: none;
+}
+
+/* -- Now Streaming Slider -- */
+
+.movie-slider {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 40px;
+}
+
+.movie-track {
+  display: flex;
+  position: relative;
+  left: 0;
+}
+
+.movie-item {
+  flex: 0 0 auto;
+  margin: 0 10px;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.movie-item img {
+  width: 180px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.movie-item:hover img {
+  transform: scale(1.1) !important; 
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 10;
+  color: #000;
+  padding: 5px;
+  background: transparent;
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 0;
+}
+
+.arrow:hover {
+  color: #ccc;
+}
+
+.arrow:active {
+  background: transparent;
+}
+
+/* -- Featured Movies Slider -- */
+
+.film-slider {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+  margin: 0 -40px;
+}
+
+.film-track {
+  display: flex;
+  position: relative;
+  transform: translateX(0);
+  will-change: transform;
+}
+
+.film-item {
+  flex: 0 0 auto;
+  margin: 0 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.film-item img {
+  width: 180px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.film-item:hover img {
+  transform: scale(1.08) !important;
+}
+
+.film-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10;
+  padding: 10px;
+  background: transparent;
+  opacity: 0.8;
+}
+
+.film-left {
+  left: 0;
+}
+
+.film-right {
+  right: 0;
+}
+
+.film-arrow:hover {
+  color: #ccc;
+}
+
+.film-arrow:active {
+  background: transparent;
+}
